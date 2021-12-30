@@ -9,7 +9,7 @@ if(!isset($_SESSION['username']) and $_SESSION['grup'] == 2){
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prebens Profilee </title>
+    <title>Prebens Profile </title>
 
     <!-- ::::::::::::::Favicon icon::::::::::::::-->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
@@ -58,7 +58,7 @@ if(!isset($_SESSION['username']) and $_SESSION['grup'] == 2){
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="dashuser.php">Home</a></li>
                                     <li><a href="shop-grid-sidebar-left.html">Shop</a></li>
                                     <li class="active" aria-current="page">Profile</li>
                                 </ul>
@@ -95,7 +95,14 @@ if(!isset($_SESSION['username']) and $_SESSION['grup'] == 2){
                                                 <form method="POST"action="userinfo.php">
                                                     <div class="default-form-box mb-20">
                                                         <label>Username</label>
-                                                        <input type="text" name="first-name">
+                                                        <div class="header-top--left">
+                                                            <span>
+                                                            <?php
+                                                                echo $_SESSION['name'] 
+                                                            ?>
+                                                            </span>
+                                                        </div>
+                                                        <!-- <input type="text" name="first-name"> -->
                                                     </div>
                                                     <div class="default-form-box mb-20">
                                                         <label>Nama</label>
